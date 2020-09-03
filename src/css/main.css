@@ -45,12 +45,13 @@ footer{
     justify-content: flex-end;
 }
 .logo {
-    height: 50px;
+    height: 65px;
 }
 .logo-text {
     font-weight: 400;
     font-size: 27px;
     margin: 5px;
+    padding-top: 27px;
 }
 
 nav {
@@ -552,9 +553,9 @@ margin-left: 90px;
 
 /* BOX1----------------------------------- */
 #footer-box1 img {
-   height: 35px;
-   filter: invert(94%) sepia(91%) saturate(508%) hue-rotate(337deg) brightness(107%) contrast(104%);
+   height: 45px;
 }
+
 #footer-box1 h2,
 #footer-box2 h2,
 #footer-box3 h2{
