@@ -49,9 +49,9 @@ footer{
 }
 .logo-text {
     font-weight: 400;
-    font-size: 27px;
+    font-size: 18px;
     margin: 5px;
-    padding-top: 27px;
+    padding-top: 38px;
 }
 
 nav {
@@ -60,6 +60,7 @@ nav {
 .nav-links {
     justify-content: space-around;
     list-style: none;
+    margin-top: 44px;
 }
 .nav-link {
     color: #5f5f79;
@@ -71,12 +72,13 @@ nav {
     border-radius: 5px;
 }
 .current {
-    border-bottom: 3px solid #fdff895e;
+    border-bottom: 3px solid #f8fa97ab;
     padding-bottom: 4px;
 }
 .cart {
     flex: 1;
     justify-content: flex-start;
+    margin-top: 26px;
 }
 .socialmedia-logo {
     height: 3em;
@@ -120,46 +122,72 @@ nav {
 }
 /* Action knappar */
 .cta {
-    border: 1px solid red;
-    padding-top: 30px;
+    margin-top: 20px;
+    margin-left: 70px;
 }
-.cta-iphone, 
-.cta-android,
 .cta-varukorg{
     outline-style: none;
     transition-duration: 0.4s;
 }
-.cta-iphone {
-    border: 2px solid #dd7d2f;
-    border-radius: 30px;
-    background: transparent;
-    color: #585772;
-    width: 150px;
-    height: 50px;
+label {
+    font-size: 20px;
+    padding-top: 6px;
+}
+.phonepick {
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 80px;
+    margin-top: 10px;
     cursor: pointer;
     font-size: 16px;
-    margin: 0 2px 0 120px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.cta-iphone:hover{
-    background-color: #ff9f68;
-    color: rgb(77, 77, 77);
-} 
-.cta-android {
-    border: 2px solid #dd7d2f;
-    border-radius: 30px;
-    background: transparent;
-    color: #585772;
-    width: 150px;
-    height: 50px;
+.phonepick input {
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
-    font-size: 16px;
 }
-.cta-android:hover{
-    background-color: #ff9f68;
-    color: rgb(77, 77, 77);
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eeeeee;
+    border-radius: 50%;
 }
+.phonepick:hover input ~ .checkmark {
+    background-color: #cccccc;
+}
+.phonepick input:checked ~ .checkmark {
+    background-color: #383838;
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.phonepick input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .phonepick .checkmark:after {
+    top: 9px;
+   left: 9px;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background: white;
+}
+
+
+
 .cta-varukorg {
-    background: #dd7d2f;
+    background: #fd7526;
     border-radius: 30px;
     filter: drop-shadow(0 1px 2px black);
     width: 200px;
@@ -168,7 +196,7 @@ nav {
     font-size: 16px;
     border: none;
     color: white;
-    margin: 0 0 0 40px;
+    margin-left: 0px;
 }
 .cta-varukorg:hover{
     background-color: #7c203a;
@@ -186,11 +214,7 @@ nav {
     }
 }
 
-/* Selector Phonepick */
-.phonepick {
-    margin: 20px;
-    background-color: red;
-}
+
 
 
 /* ABOUT ---------------------------------------------------------*/
@@ -338,7 +362,7 @@ margin-left: 90px;
 /* Portfolio--------------------------------------------------*/
 
 #portfolio-main-content {
-    padding-top: 2em;
+    padding-top: 3em;
     width: 60vw;
     height: 75vh;
     margin: auto;
