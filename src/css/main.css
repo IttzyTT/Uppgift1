@@ -22,6 +22,9 @@ header {
 main{
     height: 1080px;
 }
+#main-about {
+    height: auto;
+}
 footer{
     height: 230px;
     background-color: #31302fea;
@@ -183,7 +186,6 @@ li a:hover {
 }
 
 
-
 /* ABOUT */
 #info-bar {
     width: 100%;
@@ -192,7 +194,7 @@ li a:hover {
 }
 .info-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #3d3c3c
 }
 .info1,
@@ -202,9 +204,6 @@ li a:hover {
     padding: 8px;
     width: auto;
     height: 28vh;
-}
-.info3 {
-    justify-content: flex-start;
 }
 .info-logo {
     height: 62px;
@@ -242,20 +241,30 @@ margin-left: 90px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 1050px;
-    height: 80vh;
+    height: 95vh;
     margin: auto;
 }
-#about h1 {
+.about-box1 h1 {
+    font-family: 'Just Another Hand', cursive;
     color: #1d1d1c;
     text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+.about-box2 h1 {
+    color: #1d1d1c;
+    text-align: left;
+    margin-left: 20px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
 }
 #about p {
     color: #292928;
     font-size: 16px;
     font-weight: 400;
-    padding: 2px;
+    line-height: 1.8;
+    text-align: left;
+    margin-left: 20px;
 }
 .about-pic img{
     grid-area: 1 / 5 / 4 / 5;
@@ -283,7 +292,6 @@ margin-left: 90px;
 .about-box2 {
     grid-area: 3 / 1 / 4 / 5;
     border-radius: 0px 0px 10px 10px;
-    margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
 }
