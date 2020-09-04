@@ -383,29 +383,32 @@ label {
 .web1 img {
   grid-area: 1 / 1 / 2 / 2;
   filter: drop-shadow(0px 5px 3px black);
-  animation: web-drop 4s ease;
+  animation: web-drop 3s ease;
 }
 
 .web2 img {
   grid-area: 1 / 2 / 2 / 3;
   filter: drop-shadow(0px 5px 3px black);
-  animation: web-drop 3.5s ease;
+  animation: web-drop 2.5s ease;
 }
 
 .web3 img {
   grid-area: 2 / 1 / 3 / 2;
   filter: drop-shadow(0px 5px 3px black);
-  animation: web-drop 2.5s ease;
+  animation: web-drop 1.5s ease;
 }
 
 .web4 img {
   grid-area: 2 / 2 / 3 / 3;
   filter: drop-shadow(0px 5px 3px black);
-  animation: web-drop 1.5s ease;
+  animation: web-drop 1s ease;
 }
 
 .portfolio-cont img {
   height: 33vh;
+}
+.portfolio-cont a:hover {
+  opacity: 0.8;
 }
 
 /* Animering portfolio */
